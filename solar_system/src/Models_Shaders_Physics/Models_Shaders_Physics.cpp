@@ -87,9 +87,8 @@ void camera_track_object_position(btTransform planet_transformation, btTransform
         planet_transformation.getOrigin().getZ()
     );
     glm::vec3 new_camera_positon_vec3(glm::mix(sun_position_vec3, camera_position_vec3, 0.1f));
-    camera_position_vec3 = new_camera_positon_vec3;
     camera_front_vec3 = planet_position_vec3 - new_camera_positon_vec3;
-    camera_position_vec3 -= 0.05f * camera_front_vec3;
+    camera_position_vec3 = new_camera_positon_vec3 - (0.05f * camera_front_vec3);
 }
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)

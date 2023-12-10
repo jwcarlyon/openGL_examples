@@ -30,7 +30,7 @@ btScalar SimulationContactResultCallback::addSingleResult(
   int partId1,
   int index1
 )
-{
+{cd
     //If cp distance less than threshold
     //bCollision = true //given from user as examples
     if (colObj1Wrap->getCollisionShape()->getShapeType() == TRIANGLE_SHAPE_PROXYTYPE)

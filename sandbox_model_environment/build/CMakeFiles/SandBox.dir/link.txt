@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/SandBox.dir/main.cpp.o CMakeFiles/SandBox.dir/glad.c.o -o SandBox  -lglfw3 -ldl -lX11 -lassimp -lpthread -lBulletDynamics -lBulletCollision -lLinearMath 
